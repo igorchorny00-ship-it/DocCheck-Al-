@@ -1,1 +1,13 @@
-print("DocCheck Al Started!")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return """
+    <h1>DocCheck AI</h1>
+    <p>AI-powered document verification</p>
+    """
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
