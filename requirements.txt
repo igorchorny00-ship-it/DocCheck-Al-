@@ -1,5 +1,6 @@
-flask
+
+Flask
 gunicorn
-openai
-pillow
-pytesseract
+Pillow
+google-genai
+python-dotenv
