@@ -5,8 +5,16 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return """
-    <h1>DocCheck AI</h1>
-    <p>AI-powered document verification and analysis</p>
+    <html>
+    <head>
+        <title>DocCheck AI</title>
+    </head>
+    <body style="font-family:Arial;text-align:center;padding:50px;">
+        <h1>📄 DocCheck AI</h1>
+        <h2>AI Document Verification</h2>
+        <p>Server is running successfully.</p>
+    </body>
+    </html>
     """
 
 if __name__ == "__main__":
